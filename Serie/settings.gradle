@@ -1,0 +1,6 @@
+rootProject.name='Serie'
+include ':app'
+def opencvsdk = '../OpenCV-android-sdk'
+//include ':openCVLibrary420'
+include ':opencv'
+project(':opencv').projectDir = new File(opencvsdk + '/sdk')

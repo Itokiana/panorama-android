@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stitch Images Horizontally"
+            android:id="@+id/stitchHorizontal"
+            android:onClick="stitchHorizontal"/>
+
+        <Button
+            android:id="@+id/stitchVertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="stitchVertical"
+            android:text="Stitch Images Vertically"
+            android:layout_marginTop="50dp" />
+
+        <ImageView
+            android:id="@+id/opencvImg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/test"
+            android:layout_marginTop="200dp" />
+
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
